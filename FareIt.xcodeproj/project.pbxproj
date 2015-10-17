@@ -57,6 +57,7 @@
 		79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomRestaraunt.swift; sourceTree = "<group>"; };
 		A97B7A1B1BD2AB1F00D12A14 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		A97B7A1D1BD2C05900D12A14 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
+		A97B7A1F1BD2CC4F00D12A14 /* Yelp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yelp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 				7931D6CF1BD22CF5005FFDED /* Assets.xcassets */,
 				7931D6D11BD22CF5005FFDED /* LaunchScreen.storyboard */,
 				7931D6D41BD22CF5005FFDED /* Info.plist */,
+				A97B7A1F1BD2CC4F00D12A14 /* Yelp-Bridging-Header.h */,
 				A97B7A1D1BD2C05900D12A14 /* keys.plist */,
 				186DF4761BD2C6B300369ABE /* Location.swift */,
 			);
