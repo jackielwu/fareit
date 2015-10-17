@@ -7,11 +7,11 @@
 //
 import UIKit
 
-enum YelpSortMod: Int {
+enum SortMod: Int {
     case BestMatched = 0, Distance, HighestRated
 }
 
-class YelpClient: BDBOAuth1RequestOperationManager {
+class Client: BDBOAuth1RequestOperationManager {
     var accessToken: String!
     var accessSecret: String!
     
@@ -26,7 +26,10 @@ class YelpClient: BDBOAuth1RequestOperationManager {
     }
     
     func search(term: String, success: (AFHTTPRequestOperation!, AnyObject!) -> Void, failure: (AFHTTPRequestOperation!, NSError!) -> Void) -> AFHTTPRequestOperation! {
-        var parameters = []
+        var parameters = [
+            "limit": 20
+            "
+        ]
         return self.GET("search", parameters: parameters, success: success, failure: failure)
     }
     
