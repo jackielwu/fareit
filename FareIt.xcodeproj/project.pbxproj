@@ -98,12 +98,10 @@
 		7931D6BA1BD22CF5005FFDED = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				186DF47C1BD2D50800369ABE /* FBSDKLoginKit.framework */,
 				186DF47A1BD2D4FC00369ABE /* FBSDKCoreKit.framework */,
-=======
+
 				79FA05351BD2CECA00E3FBE8 /* FB-f-Logo__blue_29.png */,
->>>>>>> origin/master
 				7931D6C51BD22CF5005FFDED /* FareIt */,
 				7931D6DC1BD22CF5005FFDED /* FareItTests */,
 				7931D6E71BD22CF5005FFDED /* FareItUITests */,
