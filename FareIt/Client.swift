@@ -6,6 +6,7 @@
 //  Copyright © 2015 FareIt. All rights reserved.
 //
 import UIKit
+import BDBOAuth1RequestOperationManager
 
 enum SortMod: Int {
     case BestMatched = 0, Distance, HighestRated
@@ -53,13 +54,9 @@ class Client: BDBOAuth1RequestOperationManager {
         var baseUrl = NSURL(string: "http://api.yelp.com/v2/")
         super.init(baseURL: baseUrl, consumerKey: key, consumerSecret: secret);
         
-        let token = BDBOAuthToken(token: accessToken, secret: accessSecret, expiration: nil)
+        let token = BDBOAuth1Credential(token: accessToken, secret: accessSecret, expiration: nil)
         self.requestSerializer.saveAccessToken(token)
     }
     
-    func searchWithTerm(term: String, success: (AFHTTPRequestOperation!, AnyObject!) -> Void, failure: (AFHTTPRequestOperation!, NSError!) -> Void) -> AFHTTPRequestOperation! {
-        var parameters = []
-        return self.GET("search", parameters: parameters, success: success, failure: failure)
-    }
     
 }
