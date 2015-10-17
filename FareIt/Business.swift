@@ -75,4 +75,22 @@ class Business: NSObject {
         
         reviewCount = dictionary["review_count"] as? NSNumber
     }
+    
+    class func businesses(array array: [NSDictionary]) -> [Business] {
+        var businesses = [Business]()
+        for dictionary in array {
+            let business = Business(dictionary: dictionary)
+            businesses.append(business)
+        }
+        return businesses
+    }
+    
+    class func searchWithTerm(term: String, completion: ([Business]!, NSError!) -> Void) {
+        YelpClient.sharedInstance.searchWithTerm(term, completion: completion)
+    }
+    
+    
+    class func searchWithTerm(term: String, sort: YelpSortMode?, categories:[String]?, deals: Bool?, completion: ([Business]!, NSError!) -> Void) -> Void {
+        YelpClient.sharedInstance.searchWithTerm(term, sort: sort, categories, deals: deals, completion: completion)
+    }
 }
