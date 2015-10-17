@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		186DF4771BD2C6B300369ABE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DF4761BD2C6B300369ABE /* Location.swift */; settings = {ASSET_TAGS = (); }; };
 		186DF4791BD2C9E800369ABE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DF4781BD2C9E800369ABE /* Client.swift */; settings = {ASSET_TAGS = (); }; };
+		186DF47B1BD2D4FC00369ABE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186DF47A1BD2D4FC00369ABE /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		186DF47D1BD2D50800369ABE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186DF47C1BD2D50800369ABE /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C61BD22CF5005FFDED /* AppDelegate.swift */; };
 		7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C81BD22CF5005FFDED /* FirstViewController.swift */; };
 		7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		186DF4761BD2C6B300369ABE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		186DF4781BD2C9E800369ABE /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		186DF47A1BD2D4FC00369ABE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-20151007/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		186DF47C1BD2D50800369ABE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-20151007/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		7931D6C31BD22CF5005FFDED /* FareIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931D6C61BD22CF5005FFDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7931D6C81BD22CF5005FFDED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186DF47D1BD2D50800369ABE /* FBSDKLoginKit.framework in Frameworks */,
+				186DF47B1BD2D4FC00369ABE /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +96,8 @@
 		7931D6BA1BD22CF5005FFDED = {
 			isa = PBXGroup;
 			children = (
+				186DF47C1BD2D50800369ABE /* FBSDKLoginKit.framework */,
+				186DF47A1BD2D4FC00369ABE /* FBSDKCoreKit.framework */,
 				7931D6C51BD22CF5005FFDED /* FareIt */,
 				7931D6DC1BD22CF5005FFDED /* FareItTests */,
 				7931D6E71BD22CF5005FFDED /* FareItUITests */,
@@ -424,6 +432,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151007",
+				);
 				INFOPLIST_FILE = FareIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BoilerMakeProject.FareIt;
@@ -435,6 +447,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151007",
+				);
 				INFOPLIST_FILE = FareIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BoilerMakeProject.FareIt;
