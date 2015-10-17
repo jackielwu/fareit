@@ -1,6 +1,11 @@
+////  Created by Apple on 10/17/15.
+////  Copyright © 2015 FareIt. All rights reserved.
+////
+//import UIKit
 //
-//  Client.swift
-//  FareIt
+//enum SortMod: Int {
+//    case BestMatched = 0, Distance, HighestRated
+//}
 //
 //  Created by Apple on 10/17/15.
 //  Copyright © 2015 FareIt. All rights reserved.
