@@ -15,6 +15,7 @@
 		7931D6D31BD22CF5005FFDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931D6D11BD22CF5005FFDED /* LaunchScreen.storyboard */; };
 		7931D6DE1BD22CF5005FFDED /* FareItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6DD1BD22CF5005FFDED /* FareItTests.swift */; };
 		7931D6E91BD22CF5005FFDED /* FareItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6E81BD22CF5005FFDED /* FareItUITests.swift */; };
+		79FA05341BD243CA00E3FBE8 /* randomRestaraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7931D6E41BD22CF5005FFDED /* FareItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FareItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931D6E81BD22CF5005FFDED /* FareItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareItUITests.swift; sourceTree = "<group>"; };
 		7931D6EA1BD22CF5005FFDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomRestaraunt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7931D6C81BD22CF5005FFDED /* FirstViewController.swift */,
 				7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */,
 				7931D6CC1BD22CF5005FFDED /* Main.storyboard */,
+				79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */,
 				7931D6CF1BD22CF5005FFDED /* Assets.xcassets */,
 				7931D6D11BD22CF5005FFDED /* LaunchScreen.storyboard */,
 				7931D6D41BD22CF5005FFDED /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */,
+				79FA05341BD243CA00E3FBE8 /* randomRestaraunt.swift in Sources */,
 				7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */,
 				7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */,
 			);
@@ -487,6 +491,7 @@
 				7931D6EF1BD22CF5005FFDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7931D6F01BD22CF5005FFDED /* Build configuration list for PBXNativeTarget "FareItTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				7931D6F21BD22CF5005FFDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7931D6F31BD22CF5005FFDED /* Build configuration list for PBXNativeTarget "FareItUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				7931D6F51BD22CF5005FFDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
