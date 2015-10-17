@@ -9,6 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var minStarFour: UIButton!
+    @IBOutlet weak var minStarThree: UIButton!
+    @IBOutlet weak var minStarTwo: UIButton!
     @IBOutlet weak var styDelivery: UIButton!
     @IBOutlet weak var styTakeOut: UIButton!
     @IBOutlet weak var styDineIn: UIButton!
@@ -57,7 +60,21 @@ class SecondViewController: UIViewController {
         walkDistance.layer.cornerRadius = 10
         DriveDistance.layer.cornerRadius = 10
         priceOne.layer.cornerRadius = 10
+        priceTwo.layer.cornerRadius = 10
+        priceThree.layer.cornerRadius = 10
         priceFour.layer.cornerRadius = 10
+        
+        styDineIn.layer.cornerRadius = 10
+        styDelivery.layer.cornerRadius = 10
+        styTakeOut.layer.cornerRadius = 10
+        
+        gfAlcohol.layer.cornerRadius = 10
+        gfGroups.layer.cornerRadius = 10
+        gfKids.layer.cornerRadius = 10
+        
+        minStarTwo.layer.cornerRadius = 10
+        minStarThree.layer.cornerRadius = 10
+        minStarFour.layer.cornerRadius = 10
         
         commonDistanceGroup.layer.cornerRadius = 10
     }
