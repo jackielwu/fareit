@@ -40,7 +40,7 @@ class SecondViewController: UIViewController {
         distancePrefAdjuster.wraps = true
         distancePrefAdjuster.autorepeat = true
         distancePrefAdjuster.maximumValue = 30
-        distancePrefAdjuster.minimumValue = 0.5
+        distancePrefAdjuster.minimumValue = 1
     }
 
     override func didReceiveMemoryWarning() {
