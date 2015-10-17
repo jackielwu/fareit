@@ -11,6 +11,11 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
+    @IBAction func selectResturant(sender: UIButton) {
+        
+        
+    }
+    @IBOutlet weak var resturantSelector: UIButton!
     @IBOutlet weak var facebookConnect: UIButton!
     @IBOutlet weak var googleConnect: UIButton!
     @IBOutlet weak var indivList: UIButton!
@@ -30,6 +35,9 @@ class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.delegate = self
         
         self.view.addSubview(loginButton)
+        
+        resturantSelector.layer.cornerRadius = 10
+        
     }
 
     override func didReceiveMemoryWarning() {

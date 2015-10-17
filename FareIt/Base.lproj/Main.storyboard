@@ -96,16 +96,31 @@
                                     <constraint firstAttribute="width" constant="200" id="rnq-8B-aHL"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM4-PR-MSN">
+                                <rect key="frame" x="180" y="481" width="235" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Select Resturant">
+                                    <color key="titleColor" red="0.094117647060000004" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectResturant:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AS8-C7-uae"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="wM4-PR-MSN" secondAttribute="bottom" constant="45" id="7wD-eP-42o"/>
                             <constraint firstItem="ykJ-J5-biG" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="32" id="Hp3-QK-6X7"/>
+                            <constraint firstItem="wM4-PR-MSN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="K8y-Mc-cUE"/>
                             <constraint firstItem="ykJ-J5-biG" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Syj-Fe-gZa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="resturantSelector" destination="wM4-PR-MSN" id="xc5-bg-CGf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
