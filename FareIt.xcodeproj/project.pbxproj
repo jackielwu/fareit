@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186DF4771BD2C6B300369ABE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DF4761BD2C6B300369ABE /* Location.swift */; settings = {ASSET_TAGS = (); }; };
 		7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C61BD22CF5005FFDED /* AppDelegate.swift */; };
 		7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C81BD22CF5005FFDED /* FirstViewController.swift */; };
 		7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186DF4761BD2C6B300369ABE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		7931D6C31BD22CF5005FFDED /* FareIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931D6C61BD22CF5005FFDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7931D6C81BD22CF5005FFDED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				7931D6D11BD22CF5005FFDED /* LaunchScreen.storyboard */,
 				7931D6D41BD22CF5005FFDED /* Info.plist */,
 				A97B7A1D1BD2C05900D12A14 /* keys.plist */,
+				186DF4761BD2C6B300369ABE /* Location.swift */,
 			);
 			path = FareIt;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				79FA05341BD243CA00E3FBE8 /* randomRestaraunt.swift in Sources */,
 				A97B7A1C1BD2AB1F00D12A14 /* Business.swift in Sources */,
 				7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */,
+				186DF4771BD2C6B300369ABE /* Location.swift in Sources */,
 				7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
