@@ -11,19 +11,26 @@ import UIKit
 class SecondViewController: UIViewController {
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5"
+        distancePrefAdjuster.value = 5
     }
     @IBAction func driveSelected(sender: UIButton) {
         distancePref.text = "15"
+        distancePrefAdjuster.value = 15
+        
     }
     @IBAction func walkSelected(sender: UIButton) {
         distancePref.text = "1"
+        distancePrefAdjuster.value = 1
+        
     }
     @IBOutlet weak var BikeDistance: UIButton!
     @IBOutlet weak var DriveDistance: UIButton!
     @IBOutlet weak var walkDistance: UIButton!
+    
     @IBAction func distPrefValChanged(sender: UIStepper) {
         
         distancePref.text = Int(sender.value).description
+        
     }
     @IBOutlet weak var distancePref: UITextField!
     @IBOutlet weak var distancePrefAdjuster: UIStepper!
