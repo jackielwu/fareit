@@ -103,22 +103,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pC6-zi-Mhy">
-                                <rect key="frame" x="192" y="391" width="216" height="29"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="FB-f-Logo__blue_29.png" translatesAutoresizingMaskIntoConstraints="NO" id="T7t-iX-eee">
-                                        <rect key="frame" x="0.0" y="0.0" width="29" height="29"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHu-nT-Tr2">
-                                        <rect key="frame" x="29" y="0.0" width="187" height="29"/>
-                                        <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Connect with Facebook">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.63529411764705879" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -127,16 +111,12 @@
                             <constraint firstItem="rpU-xr-oUj" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8F6-NB-p5k"/>
                             <constraint firstItem="hqP-y1-fUN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="CxS-6u-IOU"/>
                             <constraint firstItem="2CV-GK-doY" firstAttribute="top" secondItem="hqP-y1-fUN" secondAttribute="bottom" constant="8" id="RJh-72-ymJ"/>
-                            <constraint firstItem="hqP-y1-fUN" firstAttribute="top" secondItem="pC6-zi-Mhy" secondAttribute="bottom" constant="14" id="WtD-fB-1vC"/>
-                            <constraint firstItem="pC6-zi-Mhy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="fqN-B7-K6g"/>
-                            <constraint firstItem="pC6-zi-Mhy" firstAttribute="top" secondItem="rpU-xr-oUj" secondAttribute="bottom" constant="30" id="iye-Ed-UAK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="facebookConnect" destination="YHu-nT-Tr2" id="amD-tg-Gj1"/>
                         <outlet property="googleConnect" destination="hqP-y1-fUN" id="xPs-s7-nid"/>
                         <outlet property="indivList" destination="2CV-GK-doY" id="pDj-eZ-BAJ"/>
                     </connections>
@@ -175,26 +155,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minimum Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9r-d6-pJ0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Minimum Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9r-d6-pJ0">
                                 <rect key="frame" x="20" y="149" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good For:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-R1-6n8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Good For:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-R1-6n8">
                                 <rect key="frame" x="20" y="297" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Style:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvC-4g-2Ft">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Style:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvC-4g-2Ft">
                                 <rect key="frame" x="20" y="389" width="43" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-zc-gs2">
-                                <rect key="frame" x="20" y="230" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -238,17 +212,17 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Alcohol/Beer"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWG-8l-WIP">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWG-8l-WIP">
                                 <rect key="frame" x="19" y="428" width="100" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Dine In"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-dx-iCN">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-dx-iCN">
                                 <rect key="frame" x="127" y="428" width="100" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Take Out"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-P4-tgk">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-P4-tgk">
                                 <rect key="frame" x="235" y="428" width="100" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Delivers"/>
@@ -297,21 +271,39 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="$$"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-zc-gs2">
+                                <rect key="frame" x="20" y="230" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SWG-8l-WIP" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="16" id="1rL-j3-xeZ"/>
                             <constraint firstItem="fLS-Wd-taq" firstAttribute="leading" secondItem="XEm-vb-eti" secondAttribute="trailing" constant="16" id="7WS-aH-lWp"/>
                             <constraint firstItem="I3L-aq-Vm8" firstAttribute="leading" secondItem="UaN-Fk-xQC" secondAttribute="trailing" constant="16" id="9ak-pr-wJJ"/>
+                            <constraint firstItem="i9r-d6-pJ0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="4" id="AEN-YY-SMJ"/>
+                            <constraint firstItem="MPT-R1-6n8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="4" id="DEk-1S-nVe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fLS-Wd-taq" secondAttribute="trailing" constant="8" id="EVQ-72-yue"/>
                             <constraint firstItem="AoU-XT-lpi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6xw-TM-Jql" secondAttribute="trailing" constant="8" id="HFI-LW-EUY"/>
+                            <constraint firstItem="fUk-o9-Zcm" firstAttribute="top" secondItem="TmD-zc-gs2" secondAttribute="bottom" constant="8" id="HHy-ch-9KF"/>
                             <constraint firstItem="UaN-Fk-xQC" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="HpU-vF-gXv"/>
+                            <constraint firstItem="LvC-4g-2Ft" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="4" id="PZx-PC-4Qd"/>
                             <constraint firstItem="Pq0-Eo-MpI" firstAttribute="leading" secondItem="fUk-o9-Zcm" secondAttribute="trailing" constant="16" id="SxF-Wk-iih"/>
                             <constraint firstItem="LRl-Ct-JJP" firstAttribute="top" secondItem="cb5-Sg-Kg0" secondAttribute="bottom" constant="8" id="VNf-TF-q7k"/>
                             <constraint firstItem="XEm-vb-eti" firstAttribute="leading" secondItem="Pq0-Eo-MpI" secondAttribute="trailing" constant="16" id="VzL-8H-zP1"/>
+                            <constraint firstItem="cb5-Sg-Kg0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="4" id="bRW-Qo-qli"/>
+                            <constraint firstItem="KOT-dx-iCN" firstAttribute="leading" secondItem="SWG-8l-WIP" secondAttribute="trailing" constant="8" id="c3b-K2-6bf"/>
                             <constraint firstItem="UaN-Fk-xQC" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="d1W-uB-xeT"/>
+                            <constraint firstItem="SWG-8l-WIP" firstAttribute="top" secondItem="LvC-4g-2Ft" secondAttribute="bottom" constant="8" id="idd-D8-wQQ"/>
+                            <constraint firstItem="TmD-zc-gs2" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="4" id="iuO-5b-zsu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7cS-P4-tgk" secondAttribute="trailing" constant="16" id="jiZ-WR-aSx"/>
                             <constraint firstItem="fUk-o9-Zcm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="8" id="nVV-pB-f3g"/>
+                            <constraint firstItem="HwY-SL-0rN" firstAttribute="top" secondItem="MPT-R1-6n8" secondAttribute="bottom" constant="8" id="pvV-I9-juM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AoU-XT-lpi" secondAttribute="trailing" constant="8" id="qLp-QO-MIj"/>
                             <constraint firstItem="6xw-TM-Jql" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LRl-Ct-JJP" secondAttribute="trailing" constant="8" id="qdI-wm-q2g"/>
+                            <constraint firstItem="KOT-dx-iCN" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="tz7-dB-hSH"/>
                             <constraint firstItem="LRl-Ct-JJP" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="8" id="xte-Zq-g8N"/>
                             <constraint firstItem="UaN-Fk-xQC" firstAttribute="leading" secondItem="HwY-SL-0rN" secondAttribute="trailing" constant="16" id="yPS-AG-uAw"/>
                         </constraints>
@@ -366,7 +358,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FB-f-Logo__blue_29.png" width="29" height="29"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

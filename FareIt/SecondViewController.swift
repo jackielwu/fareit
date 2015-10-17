@@ -59,6 +59,10 @@ class SecondViewController: UIViewController {
         priceOne.layer.cornerRadius = 10
         priceFour.layer.cornerRadius = 10
         
+        styDineIn.layer.cornerRadius = 10
+        styDelivery.layer.cornerRadius = 10
+        styTakeOut.layer.cornerRadius = 10
+        
         commonDistanceGroup.layer.cornerRadius = 10
     }
 
