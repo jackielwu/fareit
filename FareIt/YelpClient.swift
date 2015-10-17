@@ -1,11 +1,6 @@
-////  Created by Apple on 10/17/15.
-////  Copyright © 2015 FareIt. All rights reserved.
-////
-//import UIKit
 //
-//enum SortMod: Int {
-//    case BestMatched = 0, Distance, HighestRated
-//}
+//  YelpClient.swift
+//  FareIt
 //
 //  Created by Apple on 10/17/15.
 //  Copyright © 2015 FareIt. All rights reserved.
@@ -17,15 +12,15 @@ enum SortMod: Int {
     case BestMatched = 0, Distance, HighestRated
 }
 
-class Client: BDBOAuth1RequestOperationManager {
+class YelpClient: BDBOAuth1RequestOperationManager {
     var accessToken: String!
     var accessSecret: String!
     
     
-    class var sharedInstance : Client {
+    class var sharedInstance : YelpClient {
         struct Static {
             static var token : dispatch_once_t = 0
-            static var instance : Client? = nil
+            static var instance : YelpClient? = nil
         }
         
         dispatch_once(&Static.token) {
@@ -41,7 +36,7 @@ class Client: BDBOAuth1RequestOperationManager {
                 let yelpToken = keys?["token"] as? String
                 let yelpTokenSecret = keys?["tokenSecret"] as? String
                 
-                Static.instance = Client(consumerKey: yelpConsumerKey!, consumerSecret: yelpConsumerSecret!, accessToken: yelpToken!, accessSecret: yelpTokenSecret!)
+                Static.instance = YelpClient(consumerKey: yelpConsumerKey!, consumerSecret: yelpConsumerSecret!, accessToken: yelpToken!, accessSecret: yelpTokenSecret!)
             }
             
         }
