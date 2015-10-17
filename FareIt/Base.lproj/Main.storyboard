@@ -24,7 +24,7 @@
                                     <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tad-Sm-n7D" id="rif-Nw-tC8">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cP-9r-60S">
@@ -42,7 +42,7 @@
                                     <rect key="frame" x="0.0" y="72" width="600" height="239"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x3Y-ea-cJS" id="1qE-c2-dPP">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="238.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="238"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </tableViewCellContentView>
                                 </tableViewCell>
@@ -50,7 +50,7 @@
                                     <rect key="frame" x="0.0" y="311" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Tx-1C-WFA" id="afP-yf-jsO">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </tableViewCellContentView>
                                 </tableViewCell>
@@ -61,7 +61,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gRA-PT-RnW" id="gFn-ch-xwI">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -88,21 +88,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FareIt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpU-xr-oUj">
-                                <rect key="frame" x="199" y="63" width="202" height="59"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaretLogoCircleInverted.png" translatesAutoresizingMaskIntoConstraints="NO" id="ykJ-J5-biG">
+                                <rect key="frame" x="180" y="28" width="235" height="235"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="202" id="zxO-yB-IUo"/>
+                                    <constraint firstAttribute="width" constant="235" id="AK6-X8-Ohf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="rpU-xr-oUj" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="fe8-GR-GDV"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="rpU-xr-oUj" secondAttribute="bottom" constant="434" id="iNe-q6-owg"/>
-                            <constraint firstItem="rpU-xr-oUj" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="43" id="lG3-e1-7RW"/>
+                            <constraint firstItem="ykJ-J5-biG" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="180" id="0uf-9a-Vab"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ykJ-J5-biG" secondAttribute="bottom" constant="293" id="Dyf-gb-z9w"/>
+                            <constraint firstItem="ykJ-J5-biG" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" symbolic="YES" id="Mxx-vY-jTk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -414,6 +411,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FaretLogoCircleInverted.png" width="1000" height="1000"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
