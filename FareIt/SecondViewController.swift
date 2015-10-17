@@ -34,6 +34,7 @@ class SecondViewController: UIViewController {
     @IBAction func walkSelected(sender: UIButton) {
         distancePref.text = "1 mi"
         distancePrefAdjuster.value = 1
+        
     }
     
     @IBOutlet weak var BikeDistance: UIButton!
@@ -53,12 +54,13 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         distancePrefAdjuster.wraps = true
         distancePrefAdjuster.autorepeat = true
-        distancePrefAdjuster.maximumValue = 30
+        distancePrefAdjuster.maximumValue = 25
         distancePrefAdjuster.minimumValue = 1
         distancePrefAdjuster.layer.cornerRadius = 10
         
         walkDistance.layer.cornerRadius = 10
         DriveDistance.layer.cornerRadius = 10
+        BikeDistance.layer.cornerRadius = 10
         priceOne.layer.cornerRadius = 10
         priceTwo.layer.cornerRadius = 10
         priceThree.layer.cornerRadius = 10
@@ -76,8 +78,25 @@ class SecondViewController: UIViewController {
         minStarThree.layer.cornerRadius = 10
         minStarFour.layer.cornerRadius = 10
         
-        commonDistanceGroup.layer.cornerRadius = 10
+//        var button:UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
+//        
+//        button.setTitle("", forState: UIControlState.Normal)
+//        button.frame = CGRectMake(0, 0, 100, 44)
+//        
+//        self.view.addSubview(button as UIView)
+//        
+//        button.setImage(normalImage, forState: UIControlState.Selected)
+//        
+//        button.setImage(selectedImage, forState: UIControlState.Selected)
+//        
+//        button.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+        
     }
+    
+//    func buttonClicked(sender: UIButton) {
+//        
+//        sender.selected = !sender.selected;
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
