@@ -1,7 +1,3 @@
-//
-//  Client.swift
-//  FareIt
-//
 //  Created by Apple on 10/17/15.
 //  Copyright © 2015 FareIt. All rights reserved.
 //
@@ -63,3 +59,4 @@ class Client: BDBOAuth1RequestOperationManager {
     }
     
 }
+>>>>>>> origin/master

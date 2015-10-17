@@ -24,7 +24,7 @@ class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
         print("Logged in.")
         }
         
-        var loginButton = FBSDKLoginButton()
+        let loginButton = FBSDKLoginButton()
         loginButton.readPermissions = ["public_profile", "email", "user_friends"]
         loginButton.center = self.view.center
         loginButton.delegate = self
@@ -42,6 +42,7 @@ class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if error == nil {
             print("Login complete.")
+            self.performSegueWithIdentifier("showNew", sender: self)
         } else {
             print(error.localizedDescription)
         }
