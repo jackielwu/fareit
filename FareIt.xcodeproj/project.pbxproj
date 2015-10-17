@@ -22,7 +22,7 @@
 		79FA05341BD243CA00E3FBE8 /* randomRestaraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */; settings = {ASSET_TAGS = (); }; };
 		A97B7A1C1BD2AB1F00D12A14 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97B7A1B1BD2AB1F00D12A14 /* Business.swift */; settings = {ASSET_TAGS = (); }; };
 		A97B7A1E1BD2C05900D12A14 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97B7A1D1BD2C05900D12A14 /* keys.plist */; settings = {ASSET_TAGS = (); }; };
-		A9F864E91BD2EE1400FA49B9 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = A9F864E81BD2EE1400FA49B9 /* Resources */; settings = {ASSET_TAGS = (); }; };
+		A9F864EB1BD2EFA200FA49B9 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = A9F864EA1BD2EFA200FA49B9 /* Resources */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		A97B7A1B1BD2AB1F00D12A14 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		A97B7A1D1BD2C05900D12A14 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		A97B7A1F1BD2CC4F00D12A14 /* Yelp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yelp-Bridging-Header.h"; sourceTree = "<group>"; };
-		A9F864E81BD2EE1400FA49B9 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		A9F864EA1BD2EFA200FA49B9 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +127,10 @@
 				79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */,
 				A97B7A1B1BD2AB1F00D12A14 /* Business.swift */,
 				7931D6CF1BD22CF5005FFDED /* Assets.xcassets */,
+				A9F864EA1BD2EFA200FA49B9 /* Resources */,
 				7931D6D11BD22CF5005FFDED /* LaunchScreen.storyboard */,
 				7931D6D41BD22CF5005FFDED /* Info.plist */,
 				A97B7A1F1BD2CC4F00D12A14 /* Yelp-Bridging-Header.h */,
-				A9F864E81BD2EE1400FA49B9 /* Resources */,
 				A97B7A1D1BD2C05900D12A14 /* keys.plist */,
 				186DF4761BD2C6B300369ABE /* Location.swift */,
 				186DF4781BD2C9E800369ABE /* YelpClient.swift */,
@@ -263,7 +263,7 @@
 				7931D6D31BD22CF5005FFDED /* LaunchScreen.storyboard in Resources */,
 				7931D6D01BD22CF5005FFDED /* Assets.xcassets in Resources */,
 				7931D6CE1BD22CF5005FFDED /* Main.storyboard in Resources */,
-				A9F864E91BD2EE1400FA49B9 /* Resources in Resources */,
+				A9F864EB1BD2EFA200FA49B9 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
