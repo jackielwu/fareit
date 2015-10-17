@@ -10,15 +10,15 @@ import UIKit
 
 class SecondViewController: UIViewController {
     @IBAction func bikeSelected(sender: UIButton) {
-        distancePref.text = "5"
+        distancePref.text = "5 mi"
         distancePrefAdjuster.value = 5
     }
     @IBAction func driveSelected(sender: UIButton) {
-        distancePref.text = "15"
+        distancePref.text = "15 mi"
         distancePrefAdjuster.value = 15
     }
     @IBAction func walkSelected(sender: UIButton) {
-        distancePref.text = "1"
+        distancePref.text = "1 mi"
         distancePrefAdjuster.value = 1
     }
     
@@ -28,7 +28,7 @@ class SecondViewController: UIViewController {
     
     @IBAction func distPrefValChanged(sender: UIStepper) {
         
-        distancePref.text = Int(sender.value).description
+        distancePref.text = Int(sender.value).description + " mi"
     }
     
     @IBOutlet weak var distancePref: UITextField!
