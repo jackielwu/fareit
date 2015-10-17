@@ -9,6 +9,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var commonDistanceGroup: UIView!
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
         distancePrefAdjuster.value = 5
@@ -41,6 +42,12 @@ class SecondViewController: UIViewController {
         distancePrefAdjuster.autorepeat = true
         distancePrefAdjuster.maximumValue = 30
         distancePrefAdjuster.minimumValue = 1
+        distancePrefAdjuster.layer.cornerRadius = 10
+        
+        walkDistance.layer.cornerRadius = 10
+        DriveDistance.layer.cornerRadius = 10
+        
+        commonDistanceGroup.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {
