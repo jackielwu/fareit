@@ -57,11 +57,17 @@ class SecondViewController: UIViewController {
         walkDistance.layer.cornerRadius = 10
         DriveDistance.layer.cornerRadius = 10
         priceOne.layer.cornerRadius = 10
+        priceTwo.layer.cornerRadius = 10
+        priceThree.layer.cornerRadius = 10
         priceFour.layer.cornerRadius = 10
         
         styDineIn.layer.cornerRadius = 10
         styDelivery.layer.cornerRadius = 10
         styTakeOut.layer.cornerRadius = 10
+        
+        gfAlcohol.layer.cornerRadius = 10
+        gfGroups.layer.cornerRadius = 10
+        gfKids.layer.cornerRadius = 10
         
         commonDistanceGroup.layer.cornerRadius = 10
     }
