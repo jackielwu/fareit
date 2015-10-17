@@ -9,6 +9,16 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var styDelivery: UIButton!
+    @IBOutlet weak var styTakeOut: UIButton!
+    @IBOutlet weak var styDineIn: UIButton!
+    @IBOutlet weak var gfAlcohol: UIButton!
+    @IBOutlet weak var gfGroups: UIButton!
+    @IBOutlet weak var gfKids: UIButton!
+    @IBOutlet weak var priceFour: UIButton!
+    @IBOutlet weak var priceThree: UIButton!
+    @IBOutlet weak var priceTwo: UIButton!
+    @IBOutlet weak var priceOne: UIButton!
     @IBOutlet weak var commonDistanceGroup: UIView!
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
