@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xw-TM-Jql">
-                                <rect key="frame" x="256" y="65" width="97" height="30"/>
+                                <rect key="frame" x="224" y="65" width="68" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -160,7 +160,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjA-LD-1W3">
-                                <rect key="frame" x="169" y="65" width="61" height="30"/>
+                                <rect key="frame" x="152" y="65" width="61" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Drive"/>
                                 <connections>
@@ -168,14 +168,14 @@
                                 </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="AoU-XT-lpi">
-                                <rect key="frame" x="359" y="66" width="94" height="29"/>
+                                <rect key="frame" x="303" y="66" width="94" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="distPrefValChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="nzC-gc-KCw"/>
                                 </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-2A-LWk">
-                                <rect key="frame" x="100" y="65" width="61" height="30"/>
+                                <rect key="frame" x="92" y="65" width="61" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Bike"/>
                                 <connections>
@@ -266,16 +266,9 @@
                                 <rect key="frame" x="200" y="428" width="55" height="30"/>
                                 <state key="normal" title="Delivers"/>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmB-sm-hqr">
-                                <rect key="frame" x="338" y="186" width="51" height="31"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1f-7c-8nY">
-                                <rect key="frame" x="28" y="192" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-hM-C7R">
+                                <rect key="frame" x="41" y="192" width="30" height="30"/>
                                 <state key="normal" title="**"/>
-                                <connections>
-                                    <action selector="starSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="u9v-Bj-3Mi"/>
-                                    <action selector="twoStarSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="sun-Yp-61Q"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,7 +284,6 @@
                         <outlet property="DriveDistance" destination="QjA-LD-1W3" id="ESe-Nj-l68"/>
                         <outlet property="distancePref" destination="6xw-TM-Jql" id="ZFr-PN-1Ht"/>
                         <outlet property="distancePrefAdjuster" destination="AoU-XT-lpi" id="FpQ-1t-Kew"/>
-                        <outlet property="testSwitch" destination="vmB-sm-hqr" id="6fQ-3d-uZU"/>
                         <outlet property="walkDistance" destination="y0v-qQ-3a2" id="5Sq-Zd-QOW"/>
                     </connections>
                 </viewController>

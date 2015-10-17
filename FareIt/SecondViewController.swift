@@ -9,11 +9,6 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    @IBAction func twoStarSelected(sender: UIButton) {
-        
-        
-    }
-    @IBOutlet weak var testSwitch: UISwitch!
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5"
         distancePrefAdjuster.value = 5
