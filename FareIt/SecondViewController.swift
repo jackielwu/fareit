@@ -141,6 +141,8 @@ class SecondViewController: UIViewController {
         minStarThree.layer.cornerRadius = 5
         minStarFour.layer.cornerRadius = 5
         
+        apply.layer.cornerRadius = 5
+        
 //        var button:UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
 //        
 //        button.setTitle("", forState: UIControlState.Normal)
