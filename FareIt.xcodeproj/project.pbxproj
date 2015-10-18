@@ -22,7 +22,7 @@
 		7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C61BD22CF5005FFDED /* AppDelegate.swift */; };
 		7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C81BD22CF5005FFDED /* FirstViewController.swift */; };
 		7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */; };
-		7931D6CE1BD22CF5005FFDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931D6CC1BD22CF5005FFDED /* Main.storyboard */; };
+		7931D6CE1BD22CF5005FFDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931D6CC1BD22CF5005FFDED /* Main.storyboard */; settings = {ASSET_TAGS = (Filters, ); }; };
 		7931D6D01BD22CF5005FFDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7931D6CF1BD22CF5005FFDED /* Assets.xcassets */; };
 		7931D6D31BD22CF5005FFDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931D6D11BD22CF5005FFDED /* LaunchScreen.storyboard */; };
 		7931D6DE1BD22CF5005FFDED /* FareItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6DD1BD22CF5005FFDED /* FareItTests.swift */; };
@@ -335,6 +335,9 @@
 		7931D6BB1BD22CF5005FFDED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Filters,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = FareIt;
 				TargetAttributes = {

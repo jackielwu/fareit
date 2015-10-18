@@ -13,7 +13,7 @@ import FBSDKLoginKit
 class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBAction func selectResturant(sender: UIButton) {
         
-        
+//        SecondViewController.getBusinessList()
     }
     @IBOutlet weak var resturantSelector: UIButton!
     @IBOutlet weak var facebookConnect: UIButton!

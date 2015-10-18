@@ -57,18 +57,14 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var distancePref: UITextField!
     @IBOutlet weak var distancePrefAdjuster: UIStepper!
-
-    //var a = BusinessesViewController
     
-    @IBAction func getBusinessList() {
+    func getBusinessList() {
         
         Business.searchWithTerm("Restaruant", completion: { (businesses: [Business]!, error: NSError!) -> Void in
         self.listBusinesses = businesses
         })
     }
-    
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
