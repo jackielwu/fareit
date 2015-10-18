@@ -23,6 +23,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var priceOne: UIButton!
     @IBOutlet weak var commonDistanceGroup: UIView!
     var prefMaxDist = 0
+    var listBusinesses = [Business]()
     
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
