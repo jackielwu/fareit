@@ -19,7 +19,6 @@
 		186DF48B1BD30C3200369ABE /* FaretLogoOriginal.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4841BD30C3200369ABE /* FaretLogoOriginal.png */; settings = {ASSET_TAGS = (); }; };
 		186DF48C1BD30C3200369ABE /* FaretLogoOriginal.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4851BD30C3200369ABE /* FaretLogoOriginal.xcf */; settings = {ASSET_TAGS = (); }; };
 		186DF4CA1BD32A3A00369ABE /* FaretLogoOriginalRounded.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4C91BD32A3A00369ABE /* FaretLogoOriginalRounded.png */; settings = {ASSET_TAGS = (); }; };
-		18FC84041BD35DF6007F35CE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC84031BD35DF6007F35CE /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C61BD22CF5005FFDED /* AppDelegate.swift */; };
 		7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C81BD22CF5005FFDED /* FirstViewController.swift */; };
 		7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */; };
@@ -77,7 +76,6 @@
 		186DF4841BD30C3200369ABE /* FaretLogoOriginal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaretLogoOriginal.png; sourceTree = "<group>"; };
 		186DF4851BD30C3200369ABE /* FaretLogoOriginal.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaretLogoOriginal.xcf; sourceTree = "<group>"; };
 		186DF4C91BD32A3A00369ABE /* FaretLogoOriginalRounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FaretLogoOriginalRounded.png; path = ../img/FaretLogoOriginalRounded.png; sourceTree = "<group>"; };
-		18FC84031BD35DF6007F35CE /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7931D6C31BD22CF5005FFDED /* FareIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931D6C61BD22CF5005FFDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7931D6C81BD22CF5005FFDED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 				7931D6C61BD22CF5005FFDED /* AppDelegate.swift */,
 				7931D6C81BD22CF5005FFDED /* FirstViewController.swift */,
 				7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */,
-				18FC84031BD35DF6007F35CE /* TableViewController.swift */,
 				7931D6CC1BD22CF5005FFDED /* Main.storyboard */,
 				79FA05331BD243CA00E3FBE8 /* randomRestaraunt.swift */,
 				A97B7A1B1BD2AB1F00D12A14 /* Business.swift */,
@@ -435,7 +432,6 @@
 				A9F865171BD2F76A00FA49B9 /* NSDictionary+BDBOAuth1Manager.m in Sources */,
 				7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */,
 				186DF4771BD2C6B300369ABE /* Location.swift in Sources */,
-				18FC84041BD35DF6007F35CE /* TableViewController.swift in Sources */,
 				A9F865021BD2F71B00FA49B9 /* AFHTTPSessionManager.m in Sources */,
 				7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */,
 				A9F865031BD2F71B00FA49B9 /* AFNetworkReachabilityManager.m in Sources */,
