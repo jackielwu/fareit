@@ -4,7 +4,6 @@
 //
 //  Created by Richard Ju on 10/17/15.
 //  Copyright © 2015 FareIt. All rights reserved.
-//
 
 import UIKit
 
@@ -23,20 +22,22 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var priceTwo: UIButton!
     @IBOutlet weak var priceOne: UIButton!
     @IBOutlet weak var commonDistanceGroup: UIView!
-    var distanceTo = 0
+    var prefMaxDist = 0
     
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
         distancePrefAdjuster.value = 5
+        prefMaxDist = 5
     }
     @IBAction func driveSelected(sender: UIButton) {
         distancePref.text = "15 mi"
         distancePrefAdjuster.value = 15
+        prefMaxDist = 15
     }
     @IBAction func walkSelected(sender: UIButton) {
         distancePref.text = "1 mi"
         distancePrefAdjuster.value = 1
-        
+        prefMaxDist = 1
     }
     
     @IBOutlet weak var BikeDistance: UIButton!
@@ -46,6 +47,7 @@ class SecondViewController: UIViewController {
     @IBAction func distPrefValChanged(sender: UIStepper) {
         
         distancePref.text = Int(sender.value).description + " mi"
+        prefMaxDist = Int(sender.value)
     }
     
     @IBOutlet weak var distancePref: UITextField!
@@ -109,7 +111,6 @@ class SecondViewController: UIViewController {
     @IBAction func ratingGroupClicked(sender: AnyObject) {
         
         unhighlightGroup(ratingGroup)
-        
         highlight(sender as! UIButton)
     }
     
@@ -130,20 +131,16 @@ class SecondViewController: UIViewController {
     }
     
     func unhighlightGroup(var a: [UIButton]!) {
-        
         for button in a {
-            
             button.selected = false
         }
     }
     
     func highlight(button: UIButton) {
-        
         button.selected = true
     }
     
     func unhighlightButton(var a: UIButton) {
-        
         a.selected = false
     }
 }
