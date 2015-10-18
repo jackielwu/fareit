@@ -76,9 +76,9 @@ class SecondViewController: UIViewController {
         gfGroups.layer.cornerRadius = 10
         gfKids.layer.cornerRadius = 10
         
-        minStarTwo.layer.cornerRadius = 10
-        minStarThree.layer.cornerRadius = 10
-        minStarFour.layer.cornerRadius = 10
+//        minStarTwo.layer.cornerRadius = 10
+//        minStarThree.layer.cornerRadius = 10
+//        minStarFour.layer.cornerRadius = 10
         
 //        var button:UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
 //        
@@ -103,6 +103,48 @@ class SecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBOutlet var ratingGroup: [UIButton]!
+    @IBAction func ratingGroupClicked(sender: AnyObject) {
+        
+        unhighlightGroup(ratingGroup)
+        
+        highlight(sender as! UIButton)
+    }
+    
+    @IBOutlet var priceGroup: [UIButton]!
+    @IBAction func priceGroupClicked(sender: AnyObject) {
+        
+        unhighlightGroup(priceGroup)
+        highlight(sender as! UIButton)
+    }
+    
+    @IBAction func soloButtonClicked(sender: UIButton) {
+        
+        if (sender.selected == false) {
+            highlight(sender as! UIButton)
+        } else {
+            unhighlightButton(sender as! UIButton)
+        }
+    }
+    
+    func unhighlightGroup(var a: [UIButton]!) {
+        
+        for button in a {
+            
+            button.selected = false
+        }
+    }
+    
+    func highlight(button: UIButton) {
+        
+        button.selected = true
+    }
+    
+    func unhighlightButton(var a: UIButton) {
+        
+        a.selected = false
     }
 }
 

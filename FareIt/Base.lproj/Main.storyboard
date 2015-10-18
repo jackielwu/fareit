@@ -166,6 +166,9 @@
                                     <constraint firstAttribute="width" constant="45" id="NNf-oA-5Nb"/>
                                 </constraints>
                                 <state key="normal" title="***"/>
+                                <connections>
+                                    <action selector="ratingGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vVi-ZG-kbg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AA-yH-sea">
                                 <rect key="frame" x="127" y="178" width="45" height="30"/>
@@ -174,16 +177,25 @@
                                     <constraint firstAttribute="width" constant="45" id="qrj-Xd-Z9P"/>
                                 </constraints>
                                 <state key="normal" title="****"/>
+                                <connections>
+                                    <action selector="ratingGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PQ2-y0-nJv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-o9-Zcm">
                                 <rect key="frame" x="20" y="259" width="45" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="$"/>
+                                <connections>
+                                    <action selector="priceGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="d7t-zO-vFJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEm-vb-eti">
                                 <rect key="frame" x="127" y="259" width="45" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="$$$"/>
+                                <connections>
+                                    <action selector="priceGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="N1l-0N-F8Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLS-Wd-taq">
                                 <rect key="frame" x="182" y="259" width="45" height="30"/>
@@ -192,6 +204,9 @@
                                     <constraint firstAttribute="width" constant="45" id="yf5-HL-AFg"/>
                                 </constraints>
                                 <state key="normal" title="$$$$"/>
+                                <connections>
+                                    <action selector="priceGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4LI-Z2-ov5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwY-SL-0rN">
                                 <rect key="frame" x="20" y="341" width="99" height="30"/>
@@ -200,6 +215,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="fX9-kK-shz"/>
                                 </constraints>
                                 <state key="normal" title="Kids"/>
+                                <connections>
+                                    <action selector="soloButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="VTw-8r-Pfo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3L-aq-Vm8">
                                 <rect key="frame" x="235" y="341" width="100" height="30"/>
@@ -208,6 +226,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="4e9-Ix-2vs"/>
                                 </constraints>
                                 <state key="normal" title="Liquor"/>
+                                <connections>
+                                    <action selector="soloButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vAb-e4-KJr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWG-8l-WIP">
                                 <rect key="frame" x="19" y="428" width="100" height="30"/>
@@ -216,6 +237,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="Cd3-7o-SQv"/>
                                 </constraints>
                                 <state key="normal" title="Dine In"/>
+                                <connections>
+                                    <action selector="soloButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="7YC-dM-yK9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-P4-tgk">
                                 <rect key="frame" x="235" y="428" width="100" height="30"/>
@@ -224,23 +248,26 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="sok-od-bh1"/>
                                 </constraints>
                                 <state key="normal" title="Delivers"/>
+                                <connections>
+                                    <action selector="soloButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="xcM-Vx-GNP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-hM-C7R">
                                 <rect key="frame" x="19" y="178" width="46" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="**"/>
+                                <connections>
+                                    <action selector="ratingGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3nl-Yo-19p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq0-Eo-MpI">
                                 <rect key="frame" x="74" y="259" width="45" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="$$"/>
+                                <connections>
+                                    <action selector="priceGroupClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZFh-kV-7yo"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-zc-gs2">
-                                <rect key="frame" x="20" y="230" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-dx-iCN">
                                 <rect key="frame" x="127" y="428" width="100" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -248,6 +275,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="rdS-qC-YSm"/>
                                 </constraints>
                                 <state key="normal" title="Take Out"/>
+                                <connections>
+                                    <action selector="soloButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MOL-Zc-SDc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xw-TM-Jql">
                                 <rect key="frame" x="206" y="99" width="50" height="30"/>
@@ -310,7 +340,16 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="586-gv-YyK"/>
                                 </constraints>
                                 <state key="normal" title="Groups"/>
+                                <connections>
+                                    <action selector="soloButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="l94-Iq-wow"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Maximum Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-zc-gs2">
+                                <rect key="frame" x="20" y="230" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -422,6 +461,13 @@
                         <outlet property="styDineIn" destination="SWG-8l-WIP" id="cQ9-s4-yPV"/>
                         <outlet property="styTakeOut" destination="KOT-dx-iCN" id="Old-ej-4C4"/>
                         <outlet property="walkDistance" destination="y0v-qQ-3a2" id="5Sq-Zd-QOW"/>
+                        <outletCollection property="ratingGroup" destination="e0w-hM-C7R" collectionClass="NSMutableArray" id="bce-9R-DCp"/>
+                        <outletCollection property="ratingGroup" destination="muq-qb-Rzz" collectionClass="NSMutableArray" id="1gK-qb-9XV"/>
+                        <outletCollection property="ratingGroup" destination="8AA-yH-sea" collectionClass="NSMutableArray" id="uHg-1U-XgN"/>
+                        <outletCollection property="priceGroup" destination="fUk-o9-Zcm" collectionClass="NSMutableArray" id="u13-m3-G0r"/>
+                        <outletCollection property="priceGroup" destination="Pq0-Eo-MpI" collectionClass="NSMutableArray" id="J31-3n-3YX"/>
+                        <outletCollection property="priceGroup" destination="XEm-vb-eti" collectionClass="NSMutableArray" id="6W5-pb-37t"/>
+                        <outletCollection property="priceGroup" destination="fLS-Wd-taq" collectionClass="NSMutableArray" id="qyg-Fz-7S3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
