@@ -11,8 +11,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var minStarFour: UIButton!
     @IBOutlet weak var minStarThree: UIButton!
     @IBOutlet weak var minStarTwo: UIButton!
-    @IBOutlet weak var styDelivery: UIButton!
-    @IBOutlet weak var styTakeOut: UIButton!
+    @IBOutlet weak var styFastFood: UIButton!
     @IBOutlet weak var styDineIn: UIButton!
     @IBOutlet weak var gfAlcohol: UIButton!
     @IBOutlet weak var gfGroups: UIButton!
@@ -24,24 +23,41 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var commonDistanceGroup: UIView!
     var prefMaxDist = 0
     var listBusinesses: [Business]!
+    var minRating = 1
+    var kidsSelected: Bool = false
+    var relaxedSelected: Bool = false
+    var liquorSelected: Bool = false
+    let kidsParam = " kids"
+    let relaxed = " relaxed"
+    let liquor = " alcohol"
+    let cheap = " cheap"
+    let expensive = " expensive"
+    var cheapSelected = false
+    var expensiveSelected = false
+    let dineIn = " dine in"
+    let fastFood = " fast Food"
+    var dineInSelected = false
+    var fastFoodSelected = false
+    
+    var term = "food"
     
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
         distancePrefAdjuster.value = 5
         prefMaxDist = 5
-        getBusinessList()
+
     }
     @IBAction func driveSelected(sender: UIButton) {
         distancePref.text = "15 mi"
         distancePrefAdjuster.value = 15
         prefMaxDist = 15
-        getBusinessList()
+
     }
     @IBAction func walkSelected(sender: UIButton) {
         distancePref.text = "1 mi"
         distancePrefAdjuster.value = 1
         prefMaxDist = 1
-        getBusinessList()
+
     }
     
     @IBOutlet weak var BikeDistance: UIButton!
@@ -60,9 +76,34 @@ class SecondViewController: UIViewController {
     
     func getBusinessList() {
         
-        Business.searchWithTerm("Restaruant", completion: { (businesses: [Business]!, error: NSError!) -> Void in
+        Business.searchWithTerm(term, completion: { (businesses: [Business]!, error: NSError!) -> Void in
         self.listBusinesses = businesses
         })
+    }
+    
+    func search() {
+        if kidsSelected {
+            term += kidsParam
+        }
+        if relaxedSelected {
+            term += relaxed
+        }
+        if liquorSelected {
+            term += liquor
+        }
+        if cheapSelected {
+            term += cheap
+        }
+        if expensiveSelected {
+            term += expensive
+        }
+        if dineInSelected {
+            term += dineIn
+        }
+        if fastFoodSelected {
+            term += fastFood
+        }
+        getBusinessList()
     }
 
     override func viewDidLoad() {
@@ -83,8 +124,11 @@ class SecondViewController: UIViewController {
         priceFour.layer.cornerRadius = 10
         
         styDineIn.layer.cornerRadius = 10
-        styDelivery.layer.cornerRadius = 10
+<<<<<<< Updated upstream
+        styFastFood.layer.cornerRadius = 10
+=======
         styTakeOut.layer.cornerRadius = 10
+>>>>>>> Stashed changes
         
         gfAlcohol.layer.cornerRadius = 10
         gfGroups.layer.cornerRadius = 10
@@ -124,25 +168,52 @@ class SecondViewController: UIViewController {
         
         unhighlightGroup(ratingGroup)
         highlight(sender as! UIButton)
+        if sender as! UIButton == minStarTwo {
+            minRating = 2
+        }
+        if sender as! UIButton == minStarThree {
+            minRating = 3
+        }
+        if sender as! UIButton == minStarFour {
+            minRating = 4
+        }
     }
     
     @IBOutlet var priceGroup: [UIButton]!
     @IBAction func priceGroupClicked(sender: AnyObject) {
-        
+        if sender as! UIButton == priceTwo {
+            cheapSelected = true
+        }
+        if sender as! UIButton == priceFour {
+            expensiveSelected = true
+        }
         unhighlightGroup(priceGroup)
         highlight(sender as! UIButton)
     }
     
     @IBAction func soloButtonClicked(sender: UIButton) {
-        
-        if (sender.selected == false) {
-            highlight(sender as! UIButton)
-        } else {
-            unhighlightButton(sender as! UIButton)
+        if sender == styDineIn {
+            dineInSelected = true
         }
+        if sender == gfGroups {
+            relaxedSelected = true
+        }
+        if sender == gfKids {
+            kidsSelected = true
+        }
+        if sender == gfAlcohol {
+            liquorSelected = true
+        }
+
+        if (sender.selected == false) {
+            highlight(sender)
+        } else {
+            unhighlightButton(sender)
+        }
+        
     }
     
-    func unhighlightGroup(var a: [UIButton]!) {
+    func unhighlightGroup( a: [UIButton]!) {
         for button in a {
             button.selected = false
         }
@@ -152,7 +223,7 @@ class SecondViewController: UIViewController {
         button.selected = true
     }
     
-    func unhighlightButton(var a: UIButton) {
+    func unhighlightButton( a: UIButton) {
         a.selected = false
     }
 }

@@ -63,7 +63,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
     }
     
     func searchWithTerm(term: String, sort: YelpSortMode?, categories: [String]?, deals: Bool?, completion: ([Business]!, NSError!) -> Void) -> AFHTTPRequestOperation {
-        var parameters: [String : AnyObject] = ["term": term, "11": "37.785771, -122.406165"]
+        var parameters: [String : AnyObject] = ["term": "food", "1ocation": "West Lafayette"] 
         
         if sort != nil {
             parameters["sort"] = sort!.rawValue
