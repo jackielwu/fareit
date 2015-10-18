@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185B352E1BD37FF00050F980 /* YelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B352D1BD37FF00050F980 /* YelpModel.swift */; settings = {ASSET_TAGS = (); }; };
 		186DF4771BD2C6B300369ABE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DF4761BD2C6B300369ABE /* Location.swift */; settings = {ASSET_TAGS = (); }; };
 		186DF4791BD2C9E800369ABE /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DF4781BD2C9E800369ABE /* YelpClient.swift */; settings = {ASSET_TAGS = (); }; };
 		186DF47B1BD2D4FC00369ABE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186DF47A1BD2D4FC00369ABE /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
@@ -19,6 +20,7 @@
 		186DF48B1BD30C3200369ABE /* FaretLogoOriginal.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4841BD30C3200369ABE /* FaretLogoOriginal.png */; settings = {ASSET_TAGS = (); }; };
 		186DF48C1BD30C3200369ABE /* FaretLogoOriginal.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4851BD30C3200369ABE /* FaretLogoOriginal.xcf */; settings = {ASSET_TAGS = (); }; };
 		186DF4CA1BD32A3A00369ABE /* FaretLogoOriginalRounded.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4C91BD32A3A00369ABE /* FaretLogoOriginalRounded.png */; settings = {ASSET_TAGS = (); }; };
+		18FC84081BD36691007F35CE /* YelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC84071BD36691007F35CE /* YelpTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C61BD22CF5005FFDED /* AppDelegate.swift */; };
 		7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C81BD22CF5005FFDED /* FirstViewController.swift */; };
 		7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */; };
@@ -64,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185B352D1BD37FF00050F980 /* YelpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpModel.swift; sourceTree = "<group>"; };
 		186DF4761BD2C6B300369ABE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		186DF4781BD2C9E800369ABE /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
 		186DF47A1BD2D4FC00369ABE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-20151007/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		186DF4841BD30C3200369ABE /* FaretLogoOriginal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaretLogoOriginal.png; sourceTree = "<group>"; };
 		186DF4851BD30C3200369ABE /* FaretLogoOriginal.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaretLogoOriginal.xcf; sourceTree = "<group>"; };
 		186DF4C91BD32A3A00369ABE /* FaretLogoOriginalRounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FaretLogoOriginalRounded.png; path = ../img/FaretLogoOriginalRounded.png; sourceTree = "<group>"; };
+		18FC84071BD36691007F35CE /* YelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpTableViewController.swift; sourceTree = "<group>"; };
 		7931D6C31BD22CF5005FFDED /* FareIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931D6C61BD22CF5005FFDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7931D6C81BD22CF5005FFDED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 				186DF4761BD2C6B300369ABE /* Location.swift */,
 				186DF4781BD2C9E800369ABE /* YelpClient.swift */,
 				186DF4C91BD32A3A00369ABE /* FaretLogoOriginalRounded.png */,
+				18FC84071BD36691007F35CE /* YelpTableViewController.swift */,
+				185B352D1BD37FF00050F980 /* YelpModel.swift */,
 			);
 			path = FareIt;
 			sourceTree = "<group>";
@@ -430,12 +436,14 @@
 				A9F865181BD2F76A00FA49B9 /* NSString+BDBOAuth1Manager.m in Sources */,
 				A9F865081BD2F71B00FA49B9 /* AFURLSessionManager.m in Sources */,
 				A9F865171BD2F76A00FA49B9 /* NSDictionary+BDBOAuth1Manager.m in Sources */,
+				185B352E1BD37FF00050F980 /* YelpModel.swift in Sources */,
 				7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */,
 				186DF4771BD2C6B300369ABE /* Location.swift in Sources */,
 				A9F865021BD2F71B00FA49B9 /* AFHTTPSessionManager.m in Sources */,
 				7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */,
 				A9F865031BD2F71B00FA49B9 /* AFNetworkReachabilityManager.m in Sources */,
 				A9F865011BD2F71B00FA49B9 /* AFHTTPRequestOperationManager.m in Sources */,
+				18FC84081BD36691007F35CE /* YelpTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

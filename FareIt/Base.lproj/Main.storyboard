@@ -115,13 +115,13 @@
         <!--Item-->
         <scene sceneID="rNT-9J-Nhd">
             <objects>
-                <tableViewController id="olO-cw-N6Z" sceneMemberID="viewController">
+                <tableViewController id="olO-cw-N6Z" customClass="YelpTableViewController" customModule="FareIt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2J3-65-6my">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wIi-7q-cYR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="wIi-7q-cYR">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wIi-7q-cYR" id="ocf-u3-3kC">
@@ -339,6 +339,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-Hw-3Yw">
+                                <rect key="frame" x="286" y="472" width="40" height="30"/>
+                                <state key="normal" title="Apply"/>
+                                <connections>
+                                    <action selector="search" destination="8rJ-Kc-sve" eventType="touchUpInside" id="YVa-rD-ySB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647060000004" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -410,6 +417,7 @@
                     <connections>
                         <outlet property="BikeDistance" destination="56x-2A-LWk" id="7IH-ay-BzP"/>
                         <outlet property="DriveDistance" destination="QjA-LD-1W3" id="ESe-Nj-l68"/>
+                        <outlet property="apply" destination="rIL-Hw-3Yw" id="9Dr-M3-FNy"/>
                         <outlet property="distancePref" destination="6xw-TM-Jql" id="ZFr-PN-1Ht"/>
                         <outlet property="distancePrefAdjuster" destination="AoU-XT-lpi" id="FpQ-1t-Kew"/>
                         <outlet property="gfAlcohol" destination="I3L-aq-Vm8" id="4ut-S6-CQR"/>
