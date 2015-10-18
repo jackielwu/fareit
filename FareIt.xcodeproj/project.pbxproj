@@ -18,6 +18,7 @@
 		186DF48A1BD30C3200369ABE /* FaretLogoCircleWhiteBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4831BD30C3200369ABE /* FaretLogoCircleWhiteBG.png */; settings = {ASSET_TAGS = (); }; };
 		186DF48B1BD30C3200369ABE /* FaretLogoOriginal.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4841BD30C3200369ABE /* FaretLogoOriginal.png */; settings = {ASSET_TAGS = (); }; };
 		186DF48C1BD30C3200369ABE /* FaretLogoOriginal.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4851BD30C3200369ABE /* FaretLogoOriginal.xcf */; settings = {ASSET_TAGS = (); }; };
+		186DF4C81BD3279B00369ABE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186DF4C71BD3279B00369ABE /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		7931D6C71BD22CF5005FFDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C61BD22CF5005FFDED /* AppDelegate.swift */; };
 		7931D6C91BD22CF5005FFDED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6C81BD22CF5005FFDED /* FirstViewController.swift */; };
 		7931D6CB1BD22CF5005FFDED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931D6CA1BD22CF5005FFDED /* SecondViewController.swift */; };
@@ -74,6 +75,7 @@
 		186DF4831BD30C3200369ABE /* FaretLogoCircleWhiteBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaretLogoCircleWhiteBG.png; sourceTree = "<group>"; };
 		186DF4841BD30C3200369ABE /* FaretLogoOriginal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaretLogoOriginal.png; sourceTree = "<group>"; };
 		186DF4851BD30C3200369ABE /* FaretLogoOriginal.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaretLogoOriginal.xcf; sourceTree = "<group>"; };
+		186DF4C71BD3279B00369ABE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7931D6C31BD22CF5005FFDED /* FareIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931D6C61BD22CF5005FFDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7931D6C81BD22CF5005FFDED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				A97B7A1D1BD2C05900D12A14 /* keys.plist */,
 				186DF4761BD2C6B300369ABE /* Location.swift */,
 				186DF4781BD2C9E800369ABE /* YelpClient.swift */,
+				186DF4C71BD3279B00369ABE /* Images.xcassets */,
 			);
 			path = FareIt;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				186DF4891BD30C3200369ABE /* FaretLogoCircleInverted.png in Resources */,
 				7931D6D01BD22CF5005FFDED /* Assets.xcassets in Resources */,
 				186DF4881BD30C3200369ABE /* FaretLogoCircle.xcf in Resources */,
+				186DF4C81BD3279B00369ABE /* Images.xcassets in Resources */,
 				7931D6CE1BD22CF5005FFDED /* Main.storyboard in Resources */,
 				186DF48A1BD30C3200369ABE /* FaretLogoCircleWhiteBG.png in Resources */,
 			);
@@ -570,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151007",
@@ -586,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151007",
