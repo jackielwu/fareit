@@ -86,8 +86,6 @@ class SecondViewController: UIViewController {
         })
     }
     
-    
-    
     @IBOutlet weak var apply: UIButton!
     
     @IBAction func search() {
@@ -123,25 +121,25 @@ class SecondViewController: UIViewController {
         distancePrefAdjuster.autorepeat = true
         distancePrefAdjuster.maximumValue = 25
         distancePrefAdjuster.minimumValue = 1
-        distancePrefAdjuster.layer.cornerRadius = 10
+        distancePrefAdjuster.layer.cornerRadius = 5
         
-        walkDistance.layer.cornerRadius = 10
-        DriveDistance.layer.cornerRadius = 10
-        BikeDistance.layer.cornerRadius = 10
-        priceOne.layer.cornerRadius = 10
-        priceTwo.layer.cornerRadius = 10
-        priceThree.layer.cornerRadius = 10
-        priceFour.layer.cornerRadius = 10
+        walkDistance.layer.cornerRadius = 5
+        DriveDistance.layer.cornerRadius = 5
+        BikeDistance.layer.cornerRadius = 5
+        priceOne.layer.cornerRadius = 5
+        priceTwo.layer.cornerRadius = 5
+        priceThree.layer.cornerRadius = 5
+        priceFour.layer.cornerRadius = 5
         
-        styDineIn.layer.cornerRadius = 10
-        styFastFood.layer.cornerRadius = 10        
-        gfAlcohol.layer.cornerRadius = 10
-        gfGroups.layer.cornerRadius = 10
-        gfKids.layer.cornerRadius = 10
+        styDineIn.layer.cornerRadius = 5
+        styFastFood.layer.cornerRadius = 5
+        gfAlcohol.layer.cornerRadius = 5
+        gfGroups.layer.cornerRadius = 5
+        gfKids.layer.cornerRadius = 5
         
-        minStarTwo.layer.cornerRadius = 10
-        minStarThree.layer.cornerRadius = 10
-        minStarFour.layer.cornerRadius = 10
+        minStarTwo.layer.cornerRadius = 5
+        minStarThree.layer.cornerRadius = 5
+        minStarFour.layer.cornerRadius = 5
         
 //        var button:UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
 //        
