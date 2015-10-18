@@ -11,7 +11,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var minStarFour: UIButton!
     @IBOutlet weak var minStarThree: UIButton!
     @IBOutlet weak var minStarTwo: UIButton!
-    @IBOutlet weak var styDelivery: UIButton!
+    @IBOutlet weak var styFastFood: UIButton!
     @IBOutlet weak var styTakeOut: UIButton!
     @IBOutlet weak var styDineIn: UIButton!
     @IBOutlet weak var gfAlcohol: UIButton!
@@ -28,19 +28,19 @@ class SecondViewController: UIViewController {
     var kidsSelected: Bool = false
     var relaxedSelected: Bool = false
     var liquorSelected: Bool = false
-    let kidsParam = "food kids"
-    let relaxed = "relaxed"
-    let liquor = "alcohol"
-    let cheap = "cheap"
-    let expensive = "expensive"
+    let kidsParam = " kids"
+    let relaxed = " relaxed"
+    let liquor = " alcohol"
+    let cheap = " cheap"
+    let expensive = " expensive"
     var cheapSelected = false
     var expensiveSelected = false
-    let dineIn = "dine in"
-    let fastFood = "fastFood"
+    let dineIn = " dine in"
+    let fastFood = " fast Food"
     var dineInSelected = false
     var fastFoodSelected = false
     
-    var term = ""
+    var term = "food"
     
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
@@ -83,7 +83,28 @@ class SecondViewController: UIViewController {
     }
     
     func search() {
-        
+        if kidsSelected {
+            term += kidsParam
+        }
+        if relaxedSelected {
+            term += relaxed
+        }
+        if liquorSelected {
+            term += liquor
+        }
+        if cheapSelected {
+            term += cheap
+        }
+        if expensiveSelected {
+            term += expensive
+        }
+        if dineInSelected {
+            term += dineIn
+        }
+        if fastFoodSelected {
+            term += fastFood
+        }
+        getBusinessList()
     }
 
     override func viewDidLoad() {
@@ -104,7 +125,7 @@ class SecondViewController: UIViewController {
         priceFour.layer.cornerRadius = 10
         
         styDineIn.layer.cornerRadius = 10
-        styDelivery.layer.cornerRadius = 10
+        styFastFood.layer.cornerRadius = 10
         styTakeOut.layer.cornerRadius = 10
         
         gfAlcohol.layer.cornerRadius = 10
