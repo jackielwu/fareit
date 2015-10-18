@@ -79,9 +79,9 @@ class SecondViewController: UIViewController {
         gfGroups.layer.cornerRadius = 10
         gfKids.layer.cornerRadius = 10
         
-//        minStarTwo.layer.cornerRadius = 10
-//        minStarThree.layer.cornerRadius = 10
-//        minStarFour.layer.cornerRadius = 10
+        minStarTwo.layer.cornerRadius = 10
+        minStarThree.layer.cornerRadius = 10
+        minStarFour.layer.cornerRadius = 10
         
 //        var button:UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
 //        
