@@ -23,22 +23,25 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var priceOne: UIButton!
     @IBOutlet weak var commonDistanceGroup: UIView!
     var prefMaxDist = 0
-    var listBusinesses = [Business]()
+    var listBusinesses: [Business]!
     
     @IBAction func bikeSelected(sender: UIButton) {
         distancePref.text = "5 mi"
         distancePrefAdjuster.value = 5
         prefMaxDist = 5
+        getBusinessList()
     }
     @IBAction func driveSelected(sender: UIButton) {
         distancePref.text = "15 mi"
         distancePrefAdjuster.value = 15
         prefMaxDist = 15
+        getBusinessList()
     }
     @IBAction func walkSelected(sender: UIButton) {
         distancePref.text = "1 mi"
         distancePrefAdjuster.value = 1
         prefMaxDist = 1
+        getBusinessList()
     }
     
     @IBOutlet weak var BikeDistance: UIButton!
@@ -49,11 +52,23 @@ class SecondViewController: UIViewController {
         
         distancePref.text = Int(sender.value).description + " mi"
         prefMaxDist = Int(sender.value)
+        getBusinessList()
     }
     
     @IBOutlet weak var distancePref: UITextField!
     @IBOutlet weak var distancePrefAdjuster: UIStepper!
 
+    //var a = BusinessesViewController
+    
+    @IBAction func getBusinessList() {
+        
+        Business.searchWithTerm("Restaruant", completion: { (businesses: [Business]!, error: NSError!) -> Void in
+        self.listBusinesses = businesses
+        })
+    }
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
