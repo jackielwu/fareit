@@ -136,13 +136,13 @@ class SecondViewController: UIViewController {
     @IBAction func soloButtonClicked(sender: UIButton) {
         
         if (sender.selected == false) {
-            highlight(sender as! UIButton)
+            highlight(sender )
         } else {
-            unhighlightButton(sender as! UIButton)
+            unhighlightButton(sender )
         }
     }
     
-    func unhighlightGroup(var a: [UIButton]!) {
+    func unhighlightGroup( a: [UIButton]!) {
         for button in a {
             button.selected = false
         }
@@ -152,7 +152,7 @@ class SecondViewController: UIViewController {
         button.selected = true
     }
     
-    func unhighlightButton(var a: UIButton) {
+    func unhighlightButton( a: UIButton) {
         a.selected = false
     }
 }
