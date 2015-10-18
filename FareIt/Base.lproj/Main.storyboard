@@ -413,7 +413,7 @@
                         <outlet property="priceOne" destination="fUk-o9-Zcm" id="g1W-DK-AwP"/>
                         <outlet property="priceThree" destination="XEm-vb-eti" id="LDh-7e-7gR"/>
                         <outlet property="priceTwo" destination="Pq0-Eo-MpI" id="wcN-6B-6tO"/>
-                        <outlet property="styDineIn" destination="SWG-8l-WIP" id="cQ9-s4-yPV"/>
+                        <outlet property="styDineIn" destination="SWG-8l-WIP" id="8Z3-Pp-QWy"/>
                         <outlet property="styFastFood" destination="KOT-dx-iCN" id="qUI-Rs-BDt"/>
                         <outlet property="walkDistance" destination="y0v-qQ-3a2" id="5Sq-Zd-QOW"/>
                         <outletCollection property="ratingGroup" destination="e0w-hM-C7R" collectionClass="NSMutableArray" id="bce-9R-DCp"/>

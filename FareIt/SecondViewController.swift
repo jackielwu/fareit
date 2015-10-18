@@ -12,7 +12,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var minStarThree: UIButton!
     @IBOutlet weak var minStarTwo: UIButton!
     @IBOutlet weak var styFastFood: UIButton!
-    @IBOutlet weak var styTakeOut: UIButton!
     @IBOutlet weak var styDineIn: UIButton!
     @IBOutlet weak var gfAlcohol: UIButton!
     @IBOutlet weak var gfGroups: UIButton!
