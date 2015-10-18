@@ -125,7 +125,6 @@ class SecondViewController: UIViewController {
         
         styDineIn.layer.cornerRadius = 10
         styFastFood.layer.cornerRadius = 10
-        styTakeOut.layer.cornerRadius = 10
         
         gfAlcohol.layer.cornerRadius = 10
         gfGroups.layer.cornerRadius = 10
