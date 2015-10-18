@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9pv-A4-QxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r5E-7q-1oR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="-663" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Restaraunts-->
         <scene sceneID="3O9-E2-yRL">
             <objects>
-                <viewController id="mCw-uC-sOS" sceneMemberID="viewController">
+                <viewController title="Restaraunts" id="mCw-uC-sOS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l39-YL-b6Q"/>
                         <viewControllerLayoutGuide type="bottom" id="O0e-Y5-P0y"/>
@@ -126,6 +126,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="5xy-qc-kgz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WI3-jR-FZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +135,7 @@
         <!--Filters-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="Filters" customClass="SecondViewController" customModule="FareIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Filters" id="8rJ-Kc-sve" userLabel="Filters" customClass="SecondViewController" customModule="FareIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -448,18 +449,20 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r5E-7q-1oR" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="fgG-M5-tQl">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="mCw-uC-sOS" kind="relationship" relationship="viewControllers" id="k0A-eT-KwS"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="DGg-Ug-Lu1"/>
+                        <segue destination="mCw-uC-sOS" kind="relationship" relationship="viewControllers" id="k0A-eT-KwS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tPi-HM-U1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="0.0"/>
+            <point key="canvasLocation" x="16" y="-8"/>
         </scene>
     </scenes>
     <resources>
