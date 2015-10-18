@@ -27,7 +27,6 @@ class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
             print("Not logged in.")
         } else {
         print("Logged in.")
-            self.performSegueWithIdentifier("mainPage", sender: self)
         }
         
         let loginButton = FBSDKLoginButton()
@@ -37,7 +36,6 @@ class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         self.view.addSubview(loginButton)
         
-        resturantSelector.layer.cornerRadius = 10
         
     }
 

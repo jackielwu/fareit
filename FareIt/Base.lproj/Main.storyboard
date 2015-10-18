@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9pv-A4-QxB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -94,22 +94,10 @@
                                     <constraint firstAttribute="width" constant="200" id="rnq-8B-aHL"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM4-PR-MSN">
-                                <rect key="frame" x="180" y="481" width="235" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" title="Select Restaurant">
-                                    <color key="titleColor" red="0.094117647060000004" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectResturant:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AS8-C7-uae"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="wM4-PR-MSN" secondAttribute="bottom" constant="45" id="7wD-eP-42o"/>
                             <constraint firstItem="ykJ-J5-biG" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="32" id="Hp3-QK-6X7"/>
-                            <constraint firstItem="wM4-PR-MSN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="K8y-Mc-cUE"/>
                             <constraint firstItem="ykJ-J5-biG" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Syj-Fe-gZa"/>
                         </constraints>
                     </view>
@@ -117,8 +105,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="resturantSelector" destination="wM4-PR-MSN" id="xc5-bg-CGf"/>
-                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="mainPage" id="AWM-2y-ifO"/>
+                        <segue destination="r5E-7q-1oR" kind="presentation" identifier="mainPage" id="gAX-M3-xRL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -142,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WI3-jR-FZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="-316"/>
+            <point key="canvasLocation" x="759" y="-324"/>
         </scene>
         <!--Filters-->
         <scene sceneID="wg7-f3-ORb">
@@ -454,26 +441,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="372"/>
+            <point key="canvasLocation" x="759" y="346"/>
         </scene>
-        <!--mainPage-->
-        <scene sceneID="yl2-sM-qoP">
+        <!--Tab Bar Controller-->
+        <scene sceneID="xrI-Hi-J9m">
             <objects>
-                <tabBarController title="mainPage" id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r5E-7q-1oR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fgG-M5-tQl">
+                        <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="mCw-uC-sOS" kind="relationship" relationship="viewControllers" id="ty9-OO-LeZ"/>
+                        <segue destination="mCw-uC-sOS" kind="relationship" relationship="viewControllers" id="k0A-eT-KwS"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="DGg-Ug-Lu1"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPi-HM-U1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-34" y="0.0"/>
         </scene>
     </scenes>
     <resources>
