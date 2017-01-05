@@ -22,7 +22,10 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var priceOne: UIButton!
     @IBOutlet weak var commonDistanceGroup: UIView!
     var prefMaxDist = 0
-    var listBusinesses: [Business]!
+//    var listBusinesses: Array<Business> = []
+//    var listBusinesses: [Business] = []
+    var businesses: [YelpBusiness] = []
+
     var minRating = 1
     var kidsSelected: Bool = false
     var relaxedSelected: Bool = false
@@ -74,14 +77,20 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var distancePref: UITextField!
     @IBOutlet weak var distancePrefAdjuster: UIStepper!
     
+
     func getBusinessList() {
-        
-        Business.searchWithTerm(term, completion: { (businesses: [Business]!, error: NSError!) -> Void in
-        self.listBusinesses = businesses
+        let yp = YelpModel()
+        yp.search(term, done: {
+            (businesses: [YelpBusiness], error: NSError?) in
+            self.businesses = businesses
         })
     }
     
-    func search() {
+    
+    
+    @IBOutlet weak var apply: UIButton!
+    
+    @IBAction func search() {
         if kidsSelected {
             term += kidsParam
         }
@@ -103,6 +112,7 @@ class SecondViewController: UIViewController {
         if fastFoodSelected {
             term += fastFood
         }
+        print(term)
         getBusinessList()
     }
 
@@ -220,6 +230,10 @@ class SecondViewController: UIViewController {
     
     func unhighlightButton( a: UIButton) {
         a.selected = false
+    }
+    
+    func getBusiness() -> [YelpBusiness] {
+        return businesses
     }
 }
 
